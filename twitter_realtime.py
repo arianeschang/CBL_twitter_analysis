@@ -155,7 +155,7 @@ def visualize(tweets_df):
 	plt.show()
 
 	# Save the figure to figures directory
-	figureName = "_".join(settings.NAME_OF_CHART) + ".png"
+	figureName = settings.NAME_OF_CHART.replace(" ", "_")+ ".png"
 	plt.savefig('figures/' + figureName)
 
 	
