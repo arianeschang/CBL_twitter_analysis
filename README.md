@@ -12,3 +12,6 @@ Step 3: Configure settings file with search queries, etc.
 
 Step 4: Run script
         python twitter_realtime.py
+
+Output: A .csv file saved to data/ 
+        A .png figure of a stacked bar chart with sentiment. 
