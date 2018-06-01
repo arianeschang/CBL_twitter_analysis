@@ -152,11 +152,13 @@ def visualize(tweets_df):
 	# Place it in a stacked bar chart
 	tweets_df.groupby(['tweet_date', 'senti_polarity']).size().unstack().plot(kind='bar',
 													 stacked=True, rot=45, title=settings.NAME_OF_CHART)
-	plt.show()
 
 	# Save the figure to figures directory
 	figureName = settings.NAME_OF_CHART.replace(" ", "_")+ ".png"
 	plt.savefig('figures/' + figureName)
+
+	plt.show()
+
 
 	
 def main():
